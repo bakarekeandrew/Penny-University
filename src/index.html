@@ -229,6 +229,7 @@
   </section>
 
   <!-- image slider session -->
+ 
   <div class="bg-[#011F5B] min-h-screen p-8">
     <!-- Main Content -->
     <div class="max-w-6xl mx-auto">
@@ -241,84 +242,97 @@
         <div class="relative">
             <!-- Slides -->
             <div class="slides-container">
-                <div class="slide active">
-                    <div class="grid grid-cols-3 gap-4">
-                        <!-- Left Image -->
-                        <div class="overflow-hidden h-80">
-                            <img src="/api/placeholder/400/320" alt="Left slide" class="w-full h-full object-cover opacity-50">
+                <!-- Slide 1 -->
+                <div class="slide-item hidden" id="slide1">
+                    <div class="grid grid-cols-12 gap-4">
+                        <div class="col-span-3 overflow-hidden h-[400px]">
+                            <img src="./images/gate5.jpg" alt="Left slide" class="w-full h-full object-cover opacity-50">
                         </div>
-                        
-                        <!-- Center Content -->
-                        <div class="col-span-1 relative">
-                            <div class="h-80">
-                                <img src="/api/placeholder/800/600" alt="Main slide" class="w-full h-full object-cover">
-                            </div>
-                            <div class="absolute bottom-0 left-0 right-0 bg-white p-4">
-                                <div class="flex justify-between items-center">
-                                    <h3 class="text-[#011F5B] text-xl font-serif">Diversity and Inclusion</h3>
-                                    <div class="bg-[#C41E3A] text-white p-2">
-                                        <span class="text-2xl">&rsaquo;</span>
+                        <div class="col-span-6 relative">
+                            <div class="h-[400px] w-[600px] mx-auto relative">
+                                <img src="./images/gate2.jpg" alt="Main slide" class="w-full h-full object-cover">
+                                <div class="absolute -bottom-0 translate-x-1/2 bg-white w-[46%]">
+                                    <div class="flex justify-between px-6 py-2">
+                                        <h3 class="text-[#011F5B] text-xl font-serif">Diversity and Inclusion</h3>
+                                        <div class="bg-[#C41E3A] text-white p-2">
+                                            <span class="text-2xl">&rsaquo;</span>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        
-                        <!-- Right Image -->
-                        <div class="overflow-hidden h-80">
-                            <img src="/api/placeholder/400/320" alt="Right slide" class="w-full h-full object-cover opacity-50">
+                        <div class="col-span-3 overflow-hidden h-[400px]">
+                            <img src="./images/gate3.jpg" alt="Right slide" class="w-full h-full object-cover opacity-50">
                         </div>
                     </div>
                 </div>
+
+                <!-- Slide 2 -->
+                <div class="slide-item hidden" id="slide2">
+                    <div class="grid grid-cols-12 gap-4">
+                        <div class="col-span-3 overflow-hidden h-[400px]">
+                            <img src="./images/gate3.jpg" alt="Left slide" class="w-full h-full object-cover opacity-50">
+                        </div>
+                        <div class="col-span-6 relative">
+                            <div class="h-[400px] w-[600px] mx-auto relative">
+                                <img src="./images/gate5.jpg" alt="Main slide" class="w-full h-full object-cover">
+                                <div class="absolute -bottom-0 left-1/2 -translate-x-1/2 bg-white w-[40%]">
+                                    <div class="flex justify-between items-center px-6 py-3">
+                                        <h3 class="text-[#011F5B] text-xl font-serif">Campus Innovation</h3>
+                                        <div class="bg-[#C41E3A] text-white p-2">
+                                            <span class="text-2xl">&rsaquo;</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-span-3 overflow-hidden h-[400px]">
+                            <img src="./images/gate2.jpg" alt="Right slide" class="w-full h-full object-cover opacity-50">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Add more slides following the same pattern -->
             </div>
 
             <!-- Navigation Dots -->
-            <div class="flex justify-center gap-2 mt-8">
-                <button class="dot active w-2 h-2 rounded-full bg-red-800" onclick="currentSlide(1)"></button>
-                <button class="dot w-2 h-2 rounded-full bg-gray-300" onclick="currentSlide(2)"></button>
-                <button class="dot w-2 h-2 rounded-full bg-gray-300" onclick="currentSlide(3)"></button>
-                <button class="dot w-2 h-2 rounded-full bg-gray-300" onclick="currentSlide(4)"></button>
-                <button class="dot w-2 h-2 rounded-full bg-gray-300" onclick="currentSlide(5)"></button>
+            <div class="flex justify-center gap-4 mt-8">
+                <button class="w-2 h-2 rounded-full bg-red-800 transition-all duration-300" onclick="currentSlide(1)"></button>
+                <button class="w-2 h-2 rounded-full bg-gray-300 transition-all duration-300" onclick="currentSlide(2)"></button>
+                <button class="w-2 h-2 rounded-full bg-gray-300 transition-all duration-300" onclick="currentSlide(3)"></button>
+                <button class="w-2 h-2 rounded-full bg-gray-300 transition-all duration-300" onclick="currentSlide(4)"></button>
+                <button class="w-2 h-2 rounded-full bg-gray-300 transition-all duration-300" onclick="currentSlide(5)"></button>
             </div>
         </div>
     </div>
 </div>
 
 <script>
-    let slideIndex = 1;
-    showSlides(slideIndex);
+    // Show first slide by default
+    document.getElementById('slide1').classList.remove('hidden');
+    let currentIndex = 1;
 
     function currentSlide(n) {
-        showSlides(slideIndex = n);
-    }
-
-    function showSlides(n) {
-        let i;
-        let slides = document.getElementsByClassName("slide");
-        let dots = document.getElementsByClassName("dot");
+        // Hide all slides
+        const slides = document.querySelectorAll('.slide-item');
+        slides.forEach(slide => slide.classList.add('hidden'));
         
-        if (n > slides.length) {slideIndex = 1}
-        if (n < 1) {slideIndex = slides.length}
+        // Show selected slide
+        document.getElementById(`slide${n}`).classList.remove('hidden');
         
-        for (i = 0; i < slides.length; i++) {
-            slides[i].classList.remove("active");
-        }
-        for (i = 0; i < dots.length; i++) {
-            dots[i].classList.remove("active");
-        }
+        // Update dots
+        const dots = document.querySelectorAll('.rounded-full');
+        dots.forEach(dot => dot.classList.replace('bg-red-800', 'bg-gray-300'));
+        dots[n-1].classList.replace('bg-gray-300', 'bg-red-800');
         
-        slides[slideIndex-1].classList.add("active");
-        dots[slideIndex-1].classList.add("active");
+        currentIndex = n;
     }
 
     // Auto advance slides every 5 seconds
-    setInterval(() => {
-        slideIndex++;
-        if (slideIndex > document.getElementsByClassName("slide").length) {
-            slideIndex = 1;
-        }
-        showSlides(slideIndex);
-    }, 5000);
+    // setInterval(() => {
+    //     currentIndex = currentIndex % 5 + 1;
+    //     currentSlide(currentIndex);
+    // }, 5000);
 </script>
-
 </body>
 </html>
