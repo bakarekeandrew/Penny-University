@@ -102,16 +102,34 @@
 </section>
 
     <!-- Header -->
-    <div class="flex flex-col justify-between pb-6 pt-10 p-10">
-      <div>
-        <h1 class="text-5xl font-light pb-5">News</h1>
-        <div class="w-12  h-1 bg-[#94A0B8] mx-auto mb-16"></div>
+    <div class="flex justify-between items-center p-10">
+      <!-- Left Section: News Title and Border -->
+      <div class="flex items-center">
+        <div>
+          <h1 class="text-5xl text-[#011F5B] font-serif">News</h1>
+          <div class="border-2 mt-2 border-gray-400 w-8"></div>
+        </div>
       </div>
-      <div class="flex items-center space-x-10 border-b border-gray-300 pb-2 p-5">
-        <span class="text-sm">Topics</span>
-        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-        </svg>
+    
+      <!-- Right Section: Topics Dropdown -->
+      <div onclick="touch(this)" id="Topics" class="relative">
+        <div class="flex flex-row items-center gap-2 cursor-pointer group">
+          <div class="flex flex-row space-x-5 items-center">
+              <h1 class="text-lg text-[#011F5B] font-serif">Topics</h1>
+              <svg class="w-4 h-4 fill-current text-black transform transition-transform group-hover:rotate-180" viewBox="0 0 24 24">
+                <path d="M7 10l5 5 5-5z"/>
+              </svg>
+          </div>
+                 
+        </div>
+    
+        <!-- Dropdown Menu -->
+        <div class="absolute hidden bg-white shadow-lg mt-2 py-2 w-48 rounded-lg group-hover:block">
+          <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Current Students</a>
+          <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Faculty & Staff</a>
+          <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Alumni</a>
+          <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Visitors</a>
+        </div>
       </div>
     </div>
 
@@ -126,7 +144,8 @@
         />
         <div class="mt-4">
           <div class="text-red-500 text-sm font-medium mb-1 text-center">HEALTH SCIENCES</div>
-          <h2 class="text-3xl font-light">Catherine and Anthony Clifton make transformational gift to accelerate patient care, research, and education at Penn Medicine</h2>
+          <h2 class="text-3xl font-light p-3">Catherine and Anthony Clifton make transformational gift to accelerate patient care, 
+            research, and education at Penn Medicine</h2>
         </div>
       </div>
     
@@ -212,84 +231,33 @@
       </div>
   </section>
   <!-- upcomming events -->
-  <section id="upcomingEvents">
-    <div class="max-w-6xl px-2 py-6 mt-8 space-y-8 mx-auto">
-      <!-- Header -->
-      <div class="flex flex-col space-y-8">
-        <div class="text-5xl font-serif font-medium text-blue-950">
-          Upcoming Events
-          <div class="border-2 border-gray-500 w-12 mt-2"></div>
+  <section class="mb-24">
+    <div class="mb-12">
+        <p class="text-blue-950 pb-16 text-5xl">Upcoming Events</p>
+        <div class="flex">
+            <div class="p-8">
+                <img class="relative top-[15%] left-[81%]" src="./images/gate7.jpg" alt="calendar">
+                <img src="./images/02.PNG" alt="Background">
+                <p class="relative top-[-8%] max-w-[77%] bg-white text-blue-950 font-semibold text-sm pl-0 pt-8 ">TALKS</p>
+                <p class="text-blue-950 text-2xl font-medium mb-2">Managing Presentation Anxiety</p>
+                <p class="text-blue-900 font-light">Communication Within the Curriculum Associate Director Sue Weber offers tips and tricks to control anxiety during public speaking. A Penn graduate student ID is required.</p>
+            </div>
+            <div class="p-8 ">
+                <img class="relative top-[15%] left-[81%]" src="./images/03.PNG" alt="calendar">
+                <p class="mt-16 mb-12 font-semibold text-sm text-blue-950">SPECIAL EVENTS</p>
+                <p class="text-blue-950 text-2xl font-medium mb-2">Historic Pennyslvania Hospital Tour</p>
+                <p class="text-blue-900 font-light">Holman Biotech Commons hosts a public tour of Pennsylvania Hospital, the nation's first hospital. Attendees will tour the Great Court, Historic Library, and Surgical Amphitheatre. Registration is required.</p>
+            </div>
+            <div class="p-8 ">
+                <img class="relative top-[15%] left-[81%]" src="./images/04.PNG" alt="calendar">
+                <p class="mt-16 mb-12 font-semibold text-sm text-blue-950">TALKS</p>
+                <p class="text-blue-950 text-2xl font-medium mb-2">Jesse Rothstein</p>
+                <p class="text-blue-900 font-light">Jesse Rothstein, a professor of public policy and economics at the University of California, Berkeley, hosts a seminar about the role of social safety net programs in college student success.</p>
+            </div>
         </div>
-      </div>
-  
-      <!-- Events Container -->
-      <div class="flex flex-col md:flex-row md:space-x-4 space-y-6 md:space-y-0 px-2 py-4 mx-auto">
-        <div class="flex flex-col md:w-1/3">
-          <div class="md:hidden absolute right-6 text-white p-2 text-center">
-             <img src="./images/02.PNG " class="absolute"/>
-          </div>
-  
-          <!-- Image and Content -->
-          <div class="relative group overflow-hidden">
-            <img 
-              src="https://penntoday.upenn.edu/sites/default/files/styles/event_large/public/2022-12/grad-center-locust-walk.jpg?h=56d0ca2e&itok=JXdJNEtf" 
-              alt="Graduate Center"
-              class="w-full"
-            >
-          </div>
-  
-          <div class="py-4">
-            <p class="text-sm uppercase text-blue-950 font-semibold">talks</p>
-            <div class="border-2 border-gray-500 w-4 mt-2"></div>
-            <h3 class="text-xl font-serif text-blue-950 mt-4">Managing Presentation Anxiety</h3>
-            <p class="text-medium text-gray-500 mt-2">
-              Communication Within the Curriculum Associate Director Sue Weber offers tips and tricks to control anxiety during public speaking. 
-              A Penn graduate student ID is required
-            </p>
-          </div>
-        </div>
-  
-        <!-- Vertical Divider (Desktop Only) -->
-        <div class="hidden md:block border-r border-gray-300"></div>
-  
-        <!-- Second Event Card -->
-        <div class="hidden md:flex flex-col md:w-1/3 bg-gradient-to-b from-gray-100 to-white p-4">
-          <p class="text-sm uppercase text-blue-950 font-semibold md:mt-12">special events</p>
-          <div class="border-2 border-gray-400 w-8 mt-2"></div>
-          <div class="mt-8">
-            <h3 class="text-xl font-serif text-blue-950">Historic Pennsylvania Hospital Tour</h3>
-            <p class="text-medium text-gray-500 mt-2">
-              Holman Biotech Commons hosts a public tour of Pennsylvania Hospital, the nation's first hospital. 
-              Attendees will tour the Great Court, Historic Library, and Surgical Amphitheatre. Registration is required.
-            </p>
-          </div>
-        </div>
-        
-  
-        <div class="hidden md:block border-r border-gray-300"></div>
-  
-        <!-- Third Event Card -->
-        <div class="hidden md:flex flex-col md:w-1/3 bg-gradient-to-b from-gray-100 to-white p-4">
-          <p class="text-sm uppercase text-blue-950 font-semibold md:mt-12">TALKS</p>
-          <div class="border-2 border-gray-400 w-8 mt-2"></div>
-          <div class="mt-8">
-            <h3 class="text-xl font-serif text-blue-950">Jesse Rothstein</h3>
-            <p class="text-medium text-gray-500 mt-2">
-              Jesse Rothstein, a professor of public policy and economics at the University of 
-              California, Berkeley, hosts a seminar about the role of social safety net programs in college student success
-            </p>
-          </div>
-        </div>
-      </div>
-  
-      <!-- More Events Link -->
-      <div class="text-center md:text-left">
-        <a href="#" class="text-sm font-semibold text-blue-950 hover:underline">
-          MORE EVENTS VIA PENN TODAY   
-        </a>
-      </div>
     </div>
-  </section>
+    <h1 class="text-blue-950 text-sm font-semibold pl-8">MORE EVENT VIA PENN TODAY</h1>
+</section>
 
   <!--Community section-->
 <section id="community">
