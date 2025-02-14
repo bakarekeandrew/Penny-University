@@ -102,12 +102,12 @@
 </section>
 
     <!-- Header -->
-    <div class="flex justify-between items-center pb-6 pt-10 p-10">
+    <div class="flex flex-col justify-between pb-6 pt-10 p-10">
       <div>
         <h1 class="text-5xl font-light pb-5">News</h1>
         <div class="w-12  h-1 bg-[#94A0B8] mx-auto mb-16"></div>
       </div>
-      <div class="flex items-center space-x-2 border-b border-gray-300 pb-2">
+      <div class="flex items-center space-x-10 border-b border-gray-300 pb-2 p-5">
         <span class="text-sm">Topics</span>
         <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
@@ -212,55 +212,124 @@
       </div>
   </section>
   <!-- upcomming events -->
-  <section class="pt-10 p-3">
-    <h1 class="text-3xl font-serif text-blue-900 mb-8  pb-2">Upcoming Events</h1>
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-        <!-- First Event -->
-        <div class="relative">
-             <div class="flex flex-col items-right">
-              <img src="./images/02.PNG" class=" absolute w-16 h-16 object-cover"/>
-             </div>
-            <img src="./images/gate7.jpg" alt="Building" class="w-full h-64 object-cover  mb-4"/>
-            <div class="uppercase text-xs font-semibold text-gray-600 mb-2">TALKS</div>
-            <h3 class="text-xl font-serif text-blue-900 mb-2">Managing Presentation Anxiety</h3>
-            <p class="text-sm text-gray-600">
-                Communication Within the Curriculum Associate Director Sue Weber offers tips and tricks to control anxiety during public speaking. A Penn graduate student ID is required.
-            </p>
+  <section id="upcomingEvents">
+    <div class="max-w-6xl px-2 py-6 mt-8 space-y-8 mx-auto">
+      <!-- Header -->
+      <div class="flex flex-col space-y-8">
+        <div class="text-5xl font-serif font-medium text-blue-950">
+          Upcoming Events
+          <div class="border-2 border-gray-500 w-12 mt-2"></div>
         </div>
-
-        <!-- Second Event -->
-        <div class="bg-gray-200">
-            <div class="flex items-center mb-4">
-                <div class="flex flex-col text-right">
-                   <img src="./images/03.PNG"/> 
-                </div>
-            
-            </div>
-            <div class="uppercase text-xs font-semibold text-gray-600 mb-2">SPECIAL EVENTS</div>
-            <h3 class="text-xl font-serif text-blue-900 mb-2">Historic Pennsylvania Hospital Tour</h3>
-            <p class="text-sm text-gray-600">
-                Holman Biotech Commons hosts a public tour of Pennsylvania Hospital, the nation's first hospital. Attendees will tour the Great Court, Historic Library, and Surgical Amphitheatre. Registration is required.
+      </div>
+  
+      <!-- Events Container -->
+      <div class="flex flex-col md:flex-row md:space-x-4 space-y-6 md:space-y-0 px-2 py-4 mx-auto">
+        <div class="flex flex-col md:w-1/3">
+          <div class="md:hidden absolute right-6 text-white p-2 text-center">
+             <img src="./images/02.PNG " class="absolute"/>
+          </div>
+  
+          <!-- Image and Content -->
+          <div class="relative group overflow-hidden">
+            <img 
+              src="https://penntoday.upenn.edu/sites/default/files/styles/event_large/public/2022-12/grad-center-locust-walk.jpg?h=56d0ca2e&itok=JXdJNEtf" 
+              alt="Graduate Center"
+              class="w-full"
+            >
+          </div>
+  
+          <div class="py-4">
+            <p class="text-sm uppercase text-blue-950 font-semibold">talks</p>
+            <div class="border-2 border-gray-500 w-4 mt-2"></div>
+            <h3 class="text-xl font-serif text-blue-950 mt-4">Managing Presentation Anxiety</h3>
+            <p class="text-medium text-gray-500 mt-2">
+              Communication Within the Curriculum Associate Director Sue Weber offers tips and tricks to control anxiety during public speaking. 
+              A Penn graduate student ID is required
             </p>
+          </div>
         </div>
-
-        <!-- Third Event -->
-        <div>
-            <div class="flex items-center mb-4">
-                <img src="./images/04.PNG"/>
-            </div>
-            <div class="uppercase text-xs font-semibold text-gray-600 mb-2">TALKS</div>
-            <h3 class="text-xl font-serif text-blue-900 mb-2">Jesse Rothstein</h3>
-            <p class="text-sm text-gray-600">
-                Jesse Rothstein, a professor of public policy and economics at the University of California, Berkeley, hosts a seminar about the role of social safety net programs in college student success.
+  
+        <!-- Vertical Divider (Desktop Only) -->
+        <div class="hidden md:block border-r border-gray-300"></div>
+  
+        <!-- Second Event Card -->
+        <div class="hidden md:flex flex-col md:w-1/3 bg-gradient-to-b from-gray-100 to-white p-4">
+          <p class="text-sm uppercase text-blue-950 font-semibold md:mt-12">special events</p>
+          <div class="border-2 border-gray-400 w-8 mt-2"></div>
+          <div class="mt-8">
+            <h3 class="text-xl font-serif text-blue-950">Historic Pennsylvania Hospital Tour</h3>
+            <p class="text-medium text-gray-500 mt-2">
+              Holman Biotech Commons hosts a public tour of Pennsylvania Hospital, the nation's first hospital. 
+              Attendees will tour the Great Court, Historic Library, and Surgical Amphitheatre. Registration is required.
             </p>
+          </div>
         </div>
-    </div>
-
-    <div class="mt-8">
-        <a href="#" class="text-sm text-blue-900 uppercase font-semibold">MORE EVENTS VIA PENN TODAY</a>
+        
+  
+        <div class="hidden md:block border-r border-gray-300"></div>
+  
+        <!-- Third Event Card -->
+        <div class="hidden md:flex flex-col md:w-1/3 bg-gradient-to-b from-gray-100 to-white p-4">
+          <p class="text-sm uppercase text-blue-950 font-semibold md:mt-12">TALKS</p>
+          <div class="border-2 border-gray-400 w-8 mt-2"></div>
+          <div class="mt-8">
+            <h3 class="text-xl font-serif text-blue-950">Jesse Rothstein</h3>
+            <p class="text-medium text-gray-500 mt-2">
+              Jesse Rothstein, a professor of public policy and economics at the University of 
+              California, Berkeley, hosts a seminar about the role of social safety net programs in college student success
+            </p>
+          </div>
+        </div>
+      </div>
+  
+      <!-- More Events Link -->
+      <div class="text-center md:text-left">
+        <a href="#" class="text-sm font-semibold text-blue-950 hover:underline">
+          MORE EVENTS VIA PENN TODAY   
+        </a>
+      </div>
     </div>
   </section>
 
+  <!--Community section-->
+<section id="community">
+  <div class="bg-white flex justify-center items-center min-h-screen">
+    <div class="w-full max-w-7xl grid grid-cols-1 md:grid-cols-2 gap-8 px-4 md:px-6">
+      <!-- Inspiring impact card  -->
+      <div class="border border-gray-200 p-2 rounded-sm">
+        <div class="bg-[#F2F2F2] border border-gray-200 rounded shadow-sm p-12 flex flex-col items-center text-center">
+          <img 
+            src="https://www.upenn.edu/sites/default/files/2021-07/Inspiring-Impact-Campaign-Logo.png" 
+            alt="Inspiring Impact" 
+            class="h-8 object-contain mb-2"
+          />
+          <div class="w-16 h-px bg-gray-300 my-8"></div>
+          <p class="text-gray-800 text-lg leading-relaxed max-w-md mb-10">
+            Your support ignites change locally and globally, transforming Penn into a powerful engine that advances knowledge for society's greatest good.
+          </p>
+          <button class="bg-transparent border-2 border-gray-300 text-gray-800 px-8 py-3 rounded-full hover:bg-gray-50 transition font-medium text-sm tracking-wider">
+            SUPPORT PENN
+          </button>
+        </div>
+      </div>
+      
+      <!-- Supporting our community card-->
+      <div class=" bg-[#011F5B] p-2 ">
+        <div class="bg-[#011F5B] border border-gray-200 text-white p-12 flex flex-col items-center text-center">
+          <h2 class="text-3xl font-serif">Supporting Our Community</h2>
+          <div class="w-16 h-px bg-gray-300 my-8"></div>
+          <p class="text-lg leading-relaxed max-w-md mb-10">
+            During these challenging times, Penn remains committed to supporting students, faculty, and staff and to sharing information with our larger community of alumni, parents, and friends.
+          </p>
+          <button class="bg-transparent border-2 border-white text-white px-8 py-3 rounded-full hover:bg-white hover:text-blue-900 transition font-medium text-sm tracking-wider">
+            LEARN MORE
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+  
   <!-- image slider session -->
 
   <section id="Priorities" class=" bg-[url('https://www.upenn.edu/themes/custom/penn_global/assets/img/blue-pattern-bg.png')] bg-cover bg-no-repeat ">
