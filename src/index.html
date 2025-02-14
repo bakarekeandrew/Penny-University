@@ -9,53 +9,97 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-  <div class="bg-blue-800 text-white py-12 px-4">
-    <div class="max-w-7xl mx-auto">
-      <h1 class="text-2xl font-bold border-b-white pb-2">On Friday, February 14, 2025 the University will suspend normal operations for the Eagles victory parade</h1>
-      <h2 class="text-xl pt-3">Normal operations will resume Monday, February 17, 2025</h2>
-    </div>
-  </div>
-
-  <!-- Main Navigation -->
-  <header class="absolute w-full z-50 bg-gradient-to-b from-black/70 to-transparent">
-    <div class="max-w-7xl mx-auto px-4 py-6">
-      <!-- Top Bar -->
-      <div class="flex justify-between items-center">
-        <!-- Logo -->
-          <img src="./images/UPenn-logo.svg" alt="penn logo"/>
-        <div class="flex items-center">
-          
+  <div class="w-full bg-[#011f5b] py-4">
+    <div class="mx-auto max-w-[1800px] px-4">
+        <div class="border border-gray-400/30 rounded-lg p-6 flex flex-col items-start justify-center gap-4">
+            <h3 class="text-2xl font-medium text-gray-50 hover:no-underline">
+                <a href="/" class="underline font-serif decoration-1 hover:no-underline">
+                    On Friday, February 14, 2025 the University will suspend normal operations for the Eagles victory parade
+                </a>
+            </h3>
+            <p class="text-lg font-semibold text-white/90 pb-6">
+                Normal operations will resume Monday, February 17, 2025
+            </p>
         </div>
+    </div>
+</div>
 
-        <!-- Right Navigation -->
-        <div class="flex items-center space-x-6">
-          <button class="text-white hover:text-gray-300">
-            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-            </svg>
-          </button>
-          <button class="text-white hover:text-gray-300">
-            RESOURCES
-          </button>
-          <button class="bg-red-800 text-white px-6 py-2 hover:bg-red-900 transition-colors duration-200">
-            GIVE TO PENN
-          </button>
+  <!-- navigation session -->
+  <section class="relative w-full h-auto">
+    <img 
+    src="./images/gate1.jpg" 
+    alt="birds image" class="absolute w-full h-full object-cover top-0 left-0 z-0">
+    <div class="w-full bg-black/70 relative z-10 flex flex-col items-center justify-center gap-[10px] py-[10px]">
+      <div class=" hidden w-full md:flex items-center justify-between px-[2%] 2xl:px-[10%]">
+        <img src="../images/penn-logo-rbg.png" alt="pennsylvania logo" class="w-[200px] aspect-auto">
+        <div class="w-full  py-[5px]   flex flex-col items-center justify-between">
+          <div class="w-full flex items-center border-b border-gray-400 justify-end gap-[10px]">
+            
+            <div class="relative w-40 group hover:bg-white hover:border-[5px] border-gray-50">
+              <button class="flex w-full items-center gap-[5px] text-white text-[0.9rem] group-hover:text-black bg-transparent focus:border-[1px] group-hover:border-[1px] p-[20px]  cursor-pointer border-gray-400">
+                  <span class="leading-none font-semibold">
+                    RESOURCES
+                  </span>
+                  <svg class="w-4 h-4 mt-px ml-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                      <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+                  </svg>
+              </button>
+              <div class="absolute hidden w-40  group-hover:flex bg-white top-full -left-[4.5px]  flex-col gap-[10px] py-[20px] mt-1 border-[5px] border-gray-50 shadow-lg">
+                  <a class="flex items-center h-8 px-3 text-sm hover:text-orange-800" href="#">Current Students</a>
+                  <a class="flex items-center h-8 px-3 text-sm hover:text-orange-800" href="#">Faculty & Staff</a>
+                  <a class="flex items-center h-8 px-3 text-sm hover:text-orange-800" href="#">Parents</a>
+                  <a class="flex items-center h-8 px-3 text-sm hover:text-orange-800" href="#">Alumni</a>
+                  <a class="flex items-center h-8 px-3 text-sm hover:text-orange-800" href="#">Visitors</a>
+                  <a class="flex items-center h-8 px-3 text-sm hover:text-orange-800" href="#">A-Z</a>
+                  <a class="flex items-center h-8 px-3 text-sm hover:text-orange-800" href="#">Directory</a>
+                  <a class="flex items-center h-8 px-3 text-sm hover:text-orange-800" href="#">Webmail</a>
+                  <a class="flex items-center h-8 px-3 text-sm hover:text-orange-800" href="#">Services</a>
+              </div>
+          </div>
+            <a href="/" class="text-[0.9rem] font-semibold text-white px-[20px] py-[20px] bg-[#990000] hover:bg-[#990000]/90">GIVE TO PENN</a>
+          </div>
+          <div class="w-full flex items-center justify-end gap-[20px] px-[20px]">
+            <a href="/" class="text-white text-[0.9rem] font-semibold flex items-center justify-center gap-[5px] border-b-[2.5px] hover:border-amber-500 border-transparent transition-all duration-300 py-[10px]">ACADEMICS</a>
+            <span class="text-gray-600 text-[0.9rem] font-bold">/</span>
+            <a href="/" class="text-white text-[0.9rem] font-semibold flex items-center justify-center gap-[5px] border-b-[2.5px] hover:border-amber-500 border-transparent transition-all duration-300 py-[10px]">ADMISSIONS & AID</a>
+            <span class="text-gray-600 text-[0.9rem] font-bold">/</span>
+            <a href="/" class="text-white text-[0.9rem] font-semibold flex items-center justify-center gap-[5px] border-b-[2.5px] hover:border-amber-500 border-transparent transition-all duration-300 py-[10px]">ATHLETICS</a>
+            <span class="text-gray-600 text-[0.9rem] font-bold">/</span>
+            <a href="/" class="text-white text-[0.9rem] font-semibold flex items-center justify-center gap-[5px] border-b-[2.5px] hover:border-amber-500 border-transparent transition-all duration-300 py-[10px]">RESEARCH & INNOVATION</a>
+            <span class="text-gray-600 text-[0.9rem] font-bold">/</span>
+            <a href="/" class="text-white text-[0.9rem] font-semibold flex items-center justify-center gap-[5px] border-b-[2.5px] hover:border-amber-500 border-transparent transition-all duration-300 py-[10px]">LIFE AT PENN</a>
+            <span class="text-gray-600 text-[0.9rem] font-bold">/</span>
+            <a href="/" class="text-white text-[0.9rem] font-semibold flex items-center justify-center gap-[5px] border-b-[2.5px] hover:border-amber-500 border-transparent transition-all duration-300 py-[10px]">ABOUT</a>
+          </div>
         </div>
       </div>
+ 
+  <div class="md:hidden w-full aspect-[100/30] flex flex-col items-start group justify-end cursor-pointer gap-[20px] px-[2%] py-[40px] transition-all duration-300">
+  <h3 class="text-white text-[1rem] font-bold">HEALTH SCIENCES</h3>
+  <a href="/" class="text-[2.4rem] leading-12 text-white">
+      How Penn is.<br> 
+      helping with<br>
+      bird flu research<br>
+      and disease<br>
+      surveillance
+  </a>
+  <p class="w-full text-white text-[1.2rem]">
+      Faculty are working on a new vaccine for the H5N1 virus, studying its transmission, and helping the state test samples from birds and mammals
+  </p>
+  </div>
 
-      <!-- Main Menu -->
-      <nav class="mt-6">
-        <ul class="flex justify-between items-center text-white text-sm">
-          <li><a href="#" class="p-4 hover:text-yellow-400 border-b-2 border-transparent hover:border-yellow-400 transition-all duration-200">ACADEMICS</a></li>
-          <li><a href="#" class="p-4 hover:text-yellow-400 border-b-2 border-transparent hover:border-yellow-400 transition-all duration-200">ADMISSIONS & AID</a></li>
-          <li><a href="#" class="p-4 hover:text-yellow-400 border-b-2 border-transparent hover:border-yellow-400 transition-all duration-200">ATHLETICS</a></li>
-          <li><a href="#" class="p-4 hover:text-yellow-400 border-b-2 border-transparent hover:border-yellow-400 transition-all duration-200">RESEARCH & INNOVATION</a></li>
-          <li><a href="#" class="p-4 hover:text-yellow-400 border-b-2 border-transparent hover:border-yellow-400 transition-all duration-200">LIFE AT PENN</a></li>
-          <li><a href="#" class="p-4 hover:text-yellow-400 border-b-2 border-transparent hover:border-yellow-400 transition-all duration-200">ABOUT</a></li>
-        </ul>
-      </nav>
+
+  <div class="hidden md:flex w-full aspect-[100/30] flex-col items-start group justify-end cursor-pointer gap-[20px] px-[2%] 2xl:px-[10%] py-[40px] 2xl:py-[80px] transition-all duration-300">
+  <h3 class="text-white text-[1rem] font-bold">HEALTH SCIENCES</h3>
+  <a href="/" class="text-[2.4rem] leading-12 text-white">
+      How Penn is helping with bird flu <br> research and disease surveillance
+  </a>
+  <p class="w-full md:w-[80%] lg:w-[60%] text-white text-[1.2rem] hidden group-hover:flex">Faculty are working on a new vaccine for the H5N1 virus, studying its transmission, and helping the state test samples from birds and mammals</p>
+  </div>
     </div>
-  </header>
+
+    
+  </section>
 
   <!-- Hero Section -->
   <div class="relative h-screen">
