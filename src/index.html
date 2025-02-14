@@ -201,17 +201,18 @@
             <a href="#"><div class="text-red-500 text-xs font-medium mb-1 text-center">SCIENCE & TECHNOLOGY</div></a>
             <a href="#"><h3 class="text-sm font-light">Vanessa Chan bridges the gap between innovation and the market</h3></a>
           </div>
-        </div> 
-
-        <a href="#" class="text-red-600 text-center pt-10 pr-10 hover:text-red-700 text-sm font-medium">
-          MORE NEWS VIA PENN TODAY
-        </a> 
+        </div>    
       </div>
      
     </div>
-  </div>
+    <div class="w-full text-right mt-6 pr-52"> 
+      <a href="#" class="text-red-600 hover:text-red-700 text-sm font-medium">
+        MORE NEWS VIA PENN TODAY
+      </a> 
+    </div>
+
   <!-- other one image -->
-    <section id="middle">
+    <section class="pt-10"">
       <div class="h-screen relative bg-[url('https://www.upenn.edu/sites/default/files/styles/crop_2x1/public/2025-01/penn-center-innovation.jpg?h=92c5d8ae&itok=3O1cAYdA')] bg-no-repeat bg-cover object-bottom">
           <div class="absolute border-0 border-blue-300 bg-[#011f5b] max-w-md max-h-auto top-12 right-0 left-16 px-2 py-2">
               <div class=" border-1 border-gray-600 px-4 py-6 w-full text-center space-y-4">
@@ -233,30 +234,48 @@
   <!-- upcomming events -->
   <section class="mb-24">
     <div class="mb-12">
-        <p class="text-blue-950 pb-16 text-5xl">Upcoming Events</p>
-        <div class="flex">
-            <div class="p-8">
-                <img class="relative top-[15%] left-[81%]" src="./images/gate7.jpg" alt="calendar">
-                <img src="./images/02.PNG" alt="Background">
-                <p class="relative top-[-8%] max-w-[77%] bg-white text-blue-950 font-semibold text-sm pl-0 pt-8 ">TALKS</p>
+        <!-- Section Title -->
+        <p class="text-blue-950 pb-16 text-5xl pt-10 p-3">Upcoming Events</p>
+
+        <!-- Events Grid -->
+        <div class="flex gap-8"> <!-- Added gap-8 for spacing between sections -->
+            <!-- Event 1 -->
+            <div class="p-8 flex-1 border-r border-gray-300"> <!-- Added border-r for dividing line -->
+                <div class="relative">
+                    <img class="absolute top-0 right-0 w-15 h-18 object-cover" src="./images/02.PNG" alt="calendar">
+                    <img class="w-full h-64 object-cover" src="./images/gate7.jpg" alt="Background"> <!-- Set fixed height -->
+                </div>
+                <p class="mt-4 text-blue-950 font-semibold text-sm">TALKS</p>
                 <p class="text-blue-950 text-2xl font-medium mb-2">Managing Presentation Anxiety</p>
                 <p class="text-blue-900 font-light">Communication Within the Curriculum Associate Director Sue Weber offers tips and tricks to control anxiety during public speaking. A Penn graduate student ID is required.</p>
             </div>
-            <div class="p-8 ">
-                <img class="relative top-[15%] left-[81%]" src="./images/03.PNG" alt="calendar">
-                <p class="mt-16 mb-12 font-semibold text-sm text-blue-950">SPECIAL EVENTS</p>
-                <p class="text-blue-950 text-2xl font-medium mb-2">Historic Pennyslvania Hospital Tour</p>
+
+            <!-- Event 2 -->
+            <div class="p-8 flex-1 border-r border-gray-300 bg-gradient-to-b from-gray-100 to-white"> <!-- Added border-r for dividing line -->
+                <div class="relative">
+                    <img class="absolute top-0 right-0 w-15 h-18 object-cover" src="./images/03.PNG" alt="calendar">
+                </div>
+                <p class="mt-16 mb-5 font-semibold text-sm text-blue-950">SPECIAL EVENTS</p>
+                <div class="border-2 border-gray-400 w-8 mt-2 "></div>
+                <p class="text-blue-950 text-2xl font-medium mb-2 pt-5">Historic Pennsylvania Hospital Tour</p>
                 <p class="text-blue-900 font-light">Holman Biotech Commons hosts a public tour of Pennsylvania Hospital, the nation's first hospital. Attendees will tour the Great Court, Historic Library, and Surgical Amphitheatre. Registration is required.</p>
             </div>
-            <div class="p-8 ">
-                <img class="relative top-[15%] left-[81%]" src="./images/04.PNG" alt="calendar">
-                <p class="mt-16 mb-12 font-semibold text-sm text-blue-950">TALKS</p>
-                <p class="text-blue-950 text-2xl font-medium mb-2">Jesse Rothstein</p>
+
+            <!-- Event 3 -->
+            <div class="p-8 flex-1 bg-gradient-to-b from-gray-100 to-white"> <!-- No border-r for the last item -->
+                <div class="relative">
+                    <img class="absolute top-0 right-0 w-15 h-18 object-cover" src="./images/04.PNG" alt="calendar">
+                </div>
+                <p class="mt-16 mb-5 font-semibold text-sm text-blue-950">TALKS</p>
+                <div class="border-2 border-gray-400 w-8 mt-2"></div>
+                <p class="text-blue-950 text-2xl font-medium mb-2 pt-5">Jesse Rothstein</p>
                 <p class="text-blue-900 font-light">Jesse Rothstein, a professor of public policy and economics at the University of California, Berkeley, hosts a seminar about the role of social safety net programs in college student success.</p>
             </div>
         </div>
     </div>
-    <h1 class="text-blue-950 text-sm font-semibold pl-8">MORE EVENT VIA PENN TODAY</h1>
+
+    <!-- More Events Link -->
+    <h1 class="text-blue-950 text-sm font-semibold pl-8">MORE EVENTS VIA PENN TODAY</h1>
 </section>
 
   <!--Community section-->
