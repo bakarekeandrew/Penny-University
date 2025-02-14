@@ -944,14 +944,14 @@
   .h-\[10px\] {
     height: 10px;
   }
+  .h-\[200px\] {
+    height: 200px;
+  }
   .h-\[20px\] {
     height: 20px;
   }
   .h-\[180px\] {
     height: 180px;
-  }
-  .h-\[200px\] {
-    height: 200px;
   }
   .h-\[210px\] {
     height: 210px;
@@ -1957,8 +1957,50 @@
   .bg-\(color\:--my-color\) {
     background-color: var(--my-color);
   }
+  .bg-\[\#0a1d40\] {
+    background-color: #0a1d40;
+  }
+  .bg-\[\#0c114a\] {
+    background-color: #0c114a;
+  }
+  .bg-\[\#0c214a\] {
+    background-color: #0c214a;
+  }
+  .bg-\[\#0c224a\] {
+    background-color: #0c224a;
+  }
+  .bg-\[\#0c1958\] {
+    background-color: #0c1958;
+  }
+  .bg-\[\#0c2658\] {
+    background-color: #0c2658;
+  }
+  .bg-\[\#0e2757\] {
+    background-color: #0e2757;
+  }
   .bg-\[\#2F4673\] {
     background-color: #2F4673;
+  }
+  .bg-\[\#94A0B8\] {
+    background-color: #94A0B8;
+  }
+  .bg-\[\#102c62\] {
+    background-color: #102c62;
+  }
+  .bg-\[\#121b7a\] {
+    background-color: #121b7a;
+  }
+  .bg-\[\#122e65\] {
+    background-color: #122e65;
+  }
+  .bg-\[\#133c7e\] {
+    background-color: #133c7e;
+  }
+  .bg-\[\#133c7ee0\] {
+    background-color: #133c7ee0;
+  }
+  .bg-\[\#1d52a8\] {
+    background-color: #1d52a8;
   }
   .bg-\[\#011F5B\] {
     background-color: #011F5B;
@@ -1966,8 +2008,32 @@
   .bg-\[\#0088cc\] {
     background-color: #0088cc;
   }
-  .bg-\[\#94A0B8\] {
-    background-color: #94A0B8;
+  .bg-\[\#203dcd\] {
+    background-color: #203dcd;
+  }
+  .bg-\[\#203dcdae\] {
+    background-color: #203dcdae;
+  }
+  .bg-\[\#203dcde2\] {
+    background-color: #203dcde2;
+  }
+  .bg-\[\#203dcded\] {
+    background-color: #203dcded;
+  }
+  .bg-\[\#2062cd\] {
+    background-color: #2062cd;
+  }
+  .bg-\[\#2062cdc9\] {
+    background-color: #2062cdc9;
+  }
+  .bg-\[\#2062cded\] {
+    background-color: #2062cded;
+  }
+  .bg-\[\#123670\] {
+    background-color: #123670;
+  }
+  .bg-\[\#133978\] {
+    background-color: #133978;
   }
   .bg-\[\#C41E3A\] {
     background-color: #C41E3A;
